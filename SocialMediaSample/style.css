@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+	font-family: 'Inter', sans-serif;
+}
+
+body{
+	background-color: hsl(230, 17%, 14%);
+}
+
+header{
+	width: 100%;
+	height: 220px;
+	border-radius: 0 0 12px 12px;
+	background-color: hsl(232, 19%, 15%);
+}
+nav{
+	width: 1100px;
+	height: 100px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav > div > h1{
+	color: #fff;
+	font-size: 28px;
+}
+
+nav > div > h2{
+	font-size: 14px;
+	font-weight: 700;
+	color: hsl(228, 34%, 66%);
+}
+
+nav > div > p{
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+}
+/*----------------------------------toggle bar section -----------------------------*/
+#toggle-section{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#toggle{
+	width: 3.2rem;
+	height: 1.7rem;
+	margin-left: 10px;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-image: linear-gradient(to right,hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
+}
+
+#light-theme{
+	width: 1.2rem;
+	height: 1.2rem;
+	cursor: pointer;
+	border-radius: 50%;
+	border: none;
+	background-color: hsl(232, 19%, 15%);
+}
+
+#dark-theme{
+	width: 1.2rem;
+	height: 1.2rem;
+	cursor: pointer;
+	border: none;
+	visibility: hidden;
+	border-radius: 50%;
+	background-color: #fff;
+}
+/*----------------------------------toggle bar section -----------------------------*/
+#main-board{
+	width: 1100px;
+	margin: -100px auto;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-column-gap: 30px;
+}
+
+.social-card{
+	height: 220px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-color: hsl(228, 28%, 20%);
+}
+
+.social-card:hover{
+	background-color: #333A56;
+	cursor: pointer;
+}
+
+#facebook-board{
+	border-top: 5px solid hsl(208, 92%, 53%);
+}
+#twitter-board{
+	border-top: 5px solid hsl(203, 89%, 53%);
+}
+
+#instagram-board{
+    border-image: linear-gradient(to right, #fdc468, #df4996) 100% 0;
+    border-top: 5px solid;
+}
+
+#youtube-board{
+	border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+.board-top-head{
+	display: flex;
+	margin-top: 12px;
+	align-items: center;
+	justify-content: space-between;
+}
+.overall-count{
+	margin-left: 5px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.user-id{
+	color: hsl(228, 34%, 66%);
+	margin-left: 10px;
+	font-weight:700;
+}
+
+.social-card > h1{
+	color: #fff;
+	font-size: 48px;
+	margin-top: 1rem;
+}
+
+.social-card > h2{
+	color: hsl(228, 34%, 66%);
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-weight: 400;
+}
+
+#facebook-count{
+	color: hsl(163, 72%, 41%);
+}
+#twitter-count{
+	color: hsl(163, 72%, 41%);
+}
+#instagram-count{
+	color: hsl(163, 72%, 41%);
+}
+#youtube-count{
+	color: hsl(356, 69%, 56%);
+}
+
+
+
+/*-- second part  */
+#second-div{
+	width: 1100px;
+	margin: 10rem auto 1rem;
+	color: #fff;
+}
+
+
+#report-board{
+	width: 1100px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+}
+
+.card{
+	height: 130px;
+	border-radius: 5px;
+	background-color: hsl(228, 28%, 20%);
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(2,1fr);
+
+}
+
+.card:hover{
+	background-color: #333A56;
+	cursor: pointer;
+}
+
+.text-label{
+	font-size: 14px;
+	font-weight: 700;
+	margin-left: 2rem;
+	color: hsl(228, 34%, 66%);
+	text-align: left;
+}
+
+.brand-logo,.live-status{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.live-counter > h1{
+	color: #fff;
+	font-size: 28px;
+	margin-left: 2rem;
+}
+
+.live-status > h1{
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+
+#facebook-page-views{
+	color: hsl(163, 72%, 41%);
+}
+#facebook-likes-growth{
+	color: hsl(356, 69%, 56%);
+}
+#instagram-likes-growth{
+	color: hsl(163, 72%, 41%);
+}
+#instagram-page-views{
+	color: hsl(163, 72%, 41%);
+}
+#twitter-retweet-growth{
+	color: hsl(163, 72%, 41%);
+}
+#twitter-likes-growth{
+	color: hsl(163, 72%, 41%);
+}
+#youtube-likes-growth{
+	color: hsl(356, 69%, 56%);
+}
+#youtube-views-growth{
+	color: hsl(356, 69%, 56%);
+}
+
+
+
+@media (max-width: 1120px){
+	nav{
+		width: 90%;
+	}
+	#main-board{
+		width: 90%;
+	}
+	#second-div{
+		width: 90%;
+	}
+	#report-board{
+		width: 90%;
+	}
+}
+
+@media (max-width: 850PX){
+	nav > div > h1{
+		font-size: 18px;
+	}
+	nav > div > h2{
+		font-size: 16px;
+	}
+	#main-board,#report-board{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-column-gap: 30px;
+		grid-row-gap: 30PX;
+	}
+
+	#second-div > h1{
+		font-size: 28px;
+	}
+	#report-board{
+		margin: 30px auto;
+	}
+}
+
+@media (max-width: 400PX){
+	header{
+		height: 150px;
+	}
+	nav{
+		display: block;
+	}
+	#heading-bar{
+		height: 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		border-bottom: 2px solid hsl(228, 34%, 66%);
+	}
+	#toggle-section{
+		height: 30px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	#toggle{
+		margin-top: 5px;
+	}
+	nav > div > h1{
+		font-size: 18px;
+	}
+	nav > div > h2{
+		font-size: 16px;
+	}
+	nav > div > p{
+		padding-top: 10px;
+	}
+
+	#second-div{
+		margin-top: 2rem;
+	}
+
+	#main-board,#report-board{
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+		grid-column-gap: 30px;
+		grid-row-gap: 30PX;
+	}
+	#main-board{
+		margin: auto;
+	}
+}
+
+

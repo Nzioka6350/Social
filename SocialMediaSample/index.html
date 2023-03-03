@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body oncontextmenu="return false">
+  <main>
+    <header>
+      <nav>
+        <div id="heading-bar">
+          <h1 id="heading-label">Social Media Dashboard</h1>
+          <h2>Total Followers: 23,004</h2>
+        </div>
+        <!--  -->
+        <div id="toggle-section">
+          <p id="mode-txt">Dark Mode</p>
+          <!--<span></span>-->
+          <div id="toggle">
+            <button id="light-theme"></button>
+            <button id="dark-theme"></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="main-board">
+      <!-- facebook board -->
+      <div id="facebook-board" class="social-card">
+        <div class="board-top-head">
+          <img src="images/icon-facebook.svg" alt="facebook-icon">
+          <span class="user-id">@nathanf</span>
+        </div>
+        <h1 class="countData">1987</h1>
+        <h2>FOLLOWERS</h2>
+        <div class="board-top-head">
+          <img src="images/icon-up.svg" alt="up-icon">
+          <span id="facebook-count" class="overall-count">12 Today</span>
+        </div>
+      </div>
+      <!--  twiter board  -->
+      <div id="twitter-board" class="social-card">
+        <div class="board-top-head">
+          <img src="images/icon-twitter.svg" alt="twitter-icon">
+          <span class="user-id">@nathanf</span>
+        </div>
+        <h1 class="countData">1044</h1>
+        <h2>FOLLOWERS</h2>
+        <div class="board-top-head">
+          <img src="images/icon-up.svg" alt="up-icon">
+          <span id="twitter-count" class="overall-count">99 Today</span>
+        </div>
+      </div>
+      <!--  instagram board -->
+      <div id="instagram-board" class="social-card">
+        <div class="board-top-head">
+          <img src="images/icon-instagram.svg" alt="instagram-icon">
+          <span class="user-id">@realnathanf</span>
+        </div>
+        <h1 class="countData">11k</h1>
+        <h2>FOLLOWERS</h2>
+        <div class="board-top-head">
+          <img src="images/icon-up.svg" alt="up-icon">
+          <span id="instagram-count" class="overall-count">1099 Today</span>
+        </div>
+      </div>
+      <!--  youtube board -->
+      <div id="youtube-board" class="social-card">
+        <div class="board-top-head">
+          <img src="images/icon-youtube.svg" alt="youtube-icon">
+          <span class="user-id">Nathan F.</span>
+        </div>
+        <h1 class="countData">8239</h1>
+        <h2>SUBSCRIBERS</h2>
+        <div class="board-top-head">
+          <img src="images/icon-down.svg" alt="down-icon">
+          <span id="youtube-count" class="overall-count">144 Today</span>
+        </div>
+      </div>
+    </div>
+    <!--    next div here goes  -->
+    <div id="second-div">
+      <h1 id="second-div-txt">Overview - Today</h1>
+    </div>
+
+    <!-- today report  -->
+    <div id="report-board">
+      <!--  card - 1 -->
+      <div class="facebook-card card">
+          <div>
+            <h1 class="text-label">Page Views</h1>
+          </div>
+          <div class="brand-logo">
+            <img src="images/icon-facebook.svg" alt="facebook-icon">
+          </div>
+          <div class="live-counter"><h1 class="valueCount">87</h1></div>
+          <div class="live-status">
+            <img src="images/icon-up.svg" alt="">
+            <h1 id="facebook-page-views">3%</h1>
+          </div>
+      </div>
+      <!--  card - 2 -->
+      <div class="facebook-card card">
+          <div>
+            <h1 class="text-label">Likes</h1>
+          </div>
+          <div class="brand-logo">
+            <img src="images/icon-facebook.svg" alt="facebook-icon">
+          </div>
+          <div class="live-counter"><h1 class="valueCount">52</h1></div>
+          <div class="live-status">
+            <img src="images/icon-down.svg" alt="icon-down">
+            <h1 id="facebook-likes-growth">2%</h1>
+          </div>
+      </div>
+      <!--  card - 3 -->
+      <div class="instagram-card card">
+          <div>
+            <h1 class="text-label">Likes</h1>
+          </div>
+          <div class="brand-logo">
+            <img src="images/icon-instagram.svg" alt="instagram-icon">
+          </div>
+          <div class="live-counter"><h1 class="valueCount">5462</h1></div>
+          <div class="live-status">
+            <img src="images/icon-up.svg" alt="icon-up">
+            <h1 id="instagram-likes-growth">2257%</h1>
+          </div>
+      </div>
+      <!--  card - 4 -->
+      <div class="instagram-card card">
+          <div>
+            <h1 class="text-label">Profile Views</h1>
+          </div>
+          <div class="brand-logo">
+            <img src="images/icon-instagram.svg" alt="instagram-icon">
+          </div>
+          <div class="live-counter"><h1 class="valueCount">52K</h1></div>
+          <div class="live-status">
+            <img src="images/icon-up.svg" alt="icon-up">
+            <h1 id="instagram-page-views">1375%</h1>
+          </div>
+      </div>
+      <!--  card - 5 -->
+      <div class="twitter-card card">
+          <div>
+            <h1 class="text-label">Retweets</h1>
+          </div>
+          <div class="brand-logo">
+            <img src="images/icon-twitter.svg" alt="twiter-icon">
+          </div>
+          <div class="live-counter"><h1 class="valueCount">117</h1></div>
+          <div class="live-status">
+            <img src="images/icon-up.svg" alt="icon-up">
+            <h1 id="twitter-retweet-growth">303%</h1>
+          </div>
+      </div>
+      <!--  card - 6 -->
+      <div class="twitter-card card">
+          <div>
+            <h1 class="text-label">Likes</h1>
+          </div>
+          <div class="brand-logo">
+            <img src="images/icon-twitter.svg" alt="twiter-icon">
+          </div>
+          <div class="live-counter"><h1 class="valueCount">507</h1></div>
+          <div class="live-status">
+            <img src="images/icon-up.svg" alt="icon-up">
+            <h1 id="twitter-likes-growth">553%</h1>
+          </div>
+      </div>
+      <!--  card - 7 -->
+      <div class="youtube-card card">
+          <div>
+            <h1 class="text-label">Likes</h1>
+          </div>
+          <div class="brand-logo">
+            <img src="images/icon-youtube.svg" alt="youtube-icon">
+          </div>
+          <div class="live-counter"><h1 class="valueCount">107</h1></div>
+          <div class="live-status">
+            <img src="images/icon-down.svg" alt="icon-down">
+            <h1 id="youtube-likes-growth">19%</h1>
+          </div>
+      </div>
+      <!--  card - 8 -->
+      <div class="youtube-card card">
+          <div>
+            <h1 class="text-label">Total Views</h1>
+          </div>
+          <div class="brand-logo">
+            <img src="images/icon-youtube.svg" alt="youtube-icon">
+          </div>
+          <div class="live-counter"><h1 class="valueCount">1407</h1></div>
+          <div class="live-status">
+            <img src="images/icon-down.svg" alt="icon-down">
+            <h1 id="youtube-views-growth">12%</h1>
+          </div>
+      </div>
+    </div>
+  </main>
+<script src="main.js"></script>
+</body>
+</html>
